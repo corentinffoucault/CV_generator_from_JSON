@@ -1,0 +1,3 @@
+[submodule "packages/cv-template"]
+	path = packages/cv-template
+	url = https://github.com/corentinffoucault/typescript_cv_template.git
