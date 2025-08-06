@@ -1,30 +1,28 @@
 {
-  "name": "cv_generator_from_json",
-  "version": "1.0.0",
-  "description": "Create CV from submodule",
-  "homepage": "https://github.com/corentinffoucault/CV_generator_from_JSON#readme",
-  "bugs": {
-    "url": "https://github.com/corentinffoucault/CV_generator_from_JSON/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/corentinffoucault/CV_generator_from_JSON.git"
-  },
-  "license": "MIT",
-  "author": "corentin foucault",
-  "type": "module",
-  "main": "main.js",
-  "scripts": {
-    "build": "npx tsc",
-    "start": "node dist/src/main.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start2": "npx tsc && node -r ts-node/register/transpile-only -r tsconfig-paths/register dist/src/main.js"
-  },
-  "dependencies": {
-    "commander": "^14.0.0"
-  },
-  "devDependencies": {
-    "@types/node": "^24.1.0",
-    "typescript": "^5.8.3"
-  }
+    "name": "cv_generator_from_json",
+    "version": "1.0.0",
+    "description": "Create CV from submodule",
+    "homepage": "https://github.com/corentinffoucault/CV_generator_from_JSON#readme",
+    "bugs": {
+        "url": "https://github.com/corentinffoucault/CV_generator_from_JSON/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/corentinffoucault/CV_generator_from_JSON.git"
+    },
+    "license": "MIT",
+    "author": "corentin foucault",
+    "type": "module",
+    "main": "main.js",
+    "scripts": {
+        "build": "npx tsc --build",
+        "start": "npx tsx dist/main.js"
+    },
+    "dependencies": {
+        "commander": "^14.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^24.1.0",
+        "typescript": "^5.8.3"
+    }
 }
