@@ -36,10 +36,10 @@
     ],
     "references": [
         {
-            "path": "../libs/typescript_cv_template",
+            "path": "./packages/json_cv_schema",
         },
         {
-            "path": "../libs/json_cv_schema",
+            "path": "../libs/typescript_cv_template",
         },
         {
             "path": "../libs/typescript_cv_template_simple",
