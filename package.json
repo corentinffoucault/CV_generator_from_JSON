@@ -1,0 +1,32 @@
+{
+    "name": "cv_generator_from_json",
+    "version": "1.0.0",
+    "description": "Create CV from submodule",
+    "homepage": "https://github.com/corentinffoucault/CV_generator_from_JSON#readme",
+    "bugs": {
+        "url": "https://github.com/corentinffoucault/CV_generator_from_JSON/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/corentinffoucault/CV_generator_from_JSON.git"
+    },
+    "license": "MIT",
+    "author": "corentin foucault",
+    "type": "module",
+    "main": "main.js",
+    "scripts": {
+        "build": "npm run clean && npx tsc --build",
+        "clean": "npx tsc --build --clean",
+        "export-pdf": "puppeteer --wait-until networkidle0 --margin-top 0 --margin-right 0 --margin-bottom 0 --margin-left 0 --format A4 print",
+        "install-submodule": "(cd packages/json_cv_schema && npm install)",
+        "install-recursive": "npm ci && npm run install-submodule",
+        "start": "npm run build && npx tsx dist/main.js"
+    },
+    "dependencies": {
+        "commander": "^14.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^24.1.0",
+        "typescript": "^5.8.3"
+    }
+}
